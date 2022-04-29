@@ -1,0 +1,44 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "standard",
+    "link-contracts": "cd lib && ln -s ../../build/contracts contracts"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "envs": [
+      "mocha",
+      "browser"
+    ],
+    "globals": [
+      "artifacts",
+      "contract",
+      "assert"
+    ]
+  },
+  "dependencies": {
+    "next": "12.1.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "web3": "^1.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.23",
+    "@types/react": "17.0.43",
+    "@types/react-dom": "17.0.14",
+    "autoprefixer": "^10.4.4",
+    "babel-eslint": "^8.0.2",
+    "eslint": "8.12.0",
+    "eslint-config-next": "12.1.1",
+    "postcss": "^8.4.12",
+    "standard": "^10.0.3",
+    "tailwindcss": "^3.0.24",
+    "typescript": "4.6.3"
+  }
+}
